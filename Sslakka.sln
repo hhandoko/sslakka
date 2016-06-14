@@ -1,0 +1,42 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Resources", "1 - Resources", "{9C480CE2-F8F5-4100-87A2-B16A0C9C9BA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Sources", "2 - Sources", "{CFAAC090-7F58-48F5-A69F-442731F3B032}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Tests", "3 - Tests", "{22CC4521-5D20-4F22-AEE4-F0DDF30432A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sslakka.Web", "src\Sslakka.Web\Sslakka.Web.csproj", "{90D10542-20A2-4413-B943-4A463569CD46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sslakka.Web.Tests", "test\Sslakka.Web.Tests\Sslakka.Web.Tests.csproj", "{146EC623-6D4E-4C17-AA0B-309DF84F0318}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Meta", "0 - Meta", "{1FE70775-2CC4-4D94-AFF4-244308447029}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+		CONTRIBUTING.md = CONTRIBUTING.md
+		ISSUE_TEMPLATE.md = ISSUE_TEMPLATE.md
+		PULL_REQUEST_TEMPLATE.md = PULL_REQUEST_TEMPLATE.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90D10542-20A2-4413-B943-4A463569CD46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D10542-20A2-4413-B943-4A463569CD46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D10542-20A2-4413-B943-4A463569CD46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D10542-20A2-4413-B943-4A463569CD46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{146EC623-6D4E-4C17-AA0B-309DF84F0318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146EC623-6D4E-4C17-AA0B-309DF84F0318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146EC623-6D4E-4C17-AA0B-309DF84F0318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146EC623-6D4E-4C17-AA0B-309DF84F0318}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90D10542-20A2-4413-B943-4A463569CD46} = {CFAAC090-7F58-48F5-A69F-442731F3B032}
+		{146EC623-6D4E-4C17-AA0B-309DF84F0318} = {22CC4521-5D20-4F22-AEE4-F0DDF30432A1}
+	EndGlobalSection
+EndGlobal
