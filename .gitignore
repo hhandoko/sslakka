@@ -16,7 +16,7 @@
 #   limitations under the License.
 #
 #  Notes    :
-#    - Created by https://www.gitignore.io/api/windows,osx,linux,csharp,f#,visualstudio,visualstudiocode,xamarinstudio,monodevelop,intellij,dotsettings
+#    - Created by https://www.gitignore.io/api/windows,osx,linux,csharp,f#,visualstudio,visualstudiocode,xamarinstudio,monodevelop,intellij,dotsettings,vagrant
 ###
 
 ### Windows ###
@@ -680,3 +680,7 @@ fabric.properties
 
 ### DotSettings ###
 *.DotSettings
+
+
+### Vagrant ###
+.vagrant/
