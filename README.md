@@ -1,4 +1,4 @@
-## sslakka = ServiceStack + Akka.NET [![Master Build Status](https://travis-ci.org/hhandoko/sslakka.svg?branch=master)](https://travis-ci.org/hhandoko/sslakka)
+## sslakka = ServiceStack + Akka.NET [![Master Build Status](https://travis-ci.org/hhandoko/sslakka.svg?branch=master)](https://travis-ci.org/hhandoko/sslakka) [![Master Build status](https://ci.appveyor.com/api/projects/status/fvkq9rugkdwvjhw8/branch/master?svg=true)](https://ci.appveyor.com/project/hhandoko/sslakka)
 
 `sslakka` is a team communication and collaboration tool inspired by [Slack], to demonstrate and validate [ServiceStack] and [Akka.NET] technology stack working in harmony.
 

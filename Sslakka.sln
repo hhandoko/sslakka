@@ -20,8 +20,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub", "GitHub", "{199643
 		PULL_REQUEST_TEMPLATE.md = PULL_REQUEST_TEMPLATE.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Travis CI", "Travis CI", "{4C16CC2F-FFA1-407B-B4EE-A357944ED858}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Travis + Appveyor", "Travis + Appveyor", "{4C16CC2F-FFA1-407B-B4EE-A357944ED858}"
 	ProjectSection(SolutionItems) = preProject
+		.appveyor.yml = .appveyor.yml
 		.travis.yml = .travis.yml
 	EndProjectSection
 EndProject
