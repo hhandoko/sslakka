@@ -20,12 +20,18 @@ namespace Sslakka.Web.Tests
 {
     using NUnit.Framework;
 
+    using Sslakka.Web.Tests.Fixtures;
+
+    /// <summary>
+    /// Placeholder test until the application implement services.
+    /// </summary>
     [TestFixture]
-    public class Test
+    public class Test : IntegrationTestFixture
     {
         [Test]
         public void TestCase()
         {
+            Assert.IsTrue(true);
         }
     }
 }

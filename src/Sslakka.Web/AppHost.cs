@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="Default.aspx.cs">
+// <copyright file="AppHost.cs">
 //   Copyright (c) 2016 sslakka contributors
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,8 +18,24 @@
 
 namespace Sslakka.Web
 {
-    public partial class Default : System.Web.UI.Page
-    {
+    using Funq;
+    using ServiceStack;
 
+    /// <summary>
+    /// Web application host.
+    /// </summary>
+    public class AppHost : AppSelfHostBase
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:Sslakka.Web.AppHost"/> class.
+        /// </summary>
+        public AppHost() : base("sslakka", typeof(AppHost).Assembly) { }
+
+        /// <summary>
+        /// Configure the specified container.
+        /// </summary>
+        /// <param name="container">Container.</param>
+        public override void Configure(Container container) { }
     }
 }
+
