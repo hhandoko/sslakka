@@ -1,27 +1,28 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Resources", "1 - Resources", "{9C480CE2-F8F5-4100-87A2-B16A0C9C9BA2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Sources", "2 - Sources", "{CFAAC090-7F58-48F5-A69F-442731F3B032}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Tests", "3 - Tests", "{22CC4521-5D20-4F22-AEE4-F0DDF30432A1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sslakka.Web", "src\Sslakka.Web\Sslakka.Web.csproj", "{90D10542-20A2-4413-B943-4A463569CD46}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sslakka.Web.Tests", "test\Sslakka.Web.Tests\Sslakka.Web.Tests.csproj", "{146EC623-6D4E-4C17-AA0B-309DF84F0318}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Meta", "0 - Meta", "{1FE70775-2CC4-4D94-AFF4-244308447029}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE.txt = LICENSE.txt
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Resources", "1 - Resources", "{9C480CE2-F8F5-4100-87A2-B16A0C9C9BA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Sources", "2 - Sources", "{CFAAC090-7F58-48F5-A69F-442731F3B032}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Tests", "3 - Tests", "{22CC4521-5D20-4F22-AEE4-F0DDF30432A1}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub", "GitHub", "{19964367-1516-481D-A7C2-E57372A48AD2}"
 	ProjectSection(SolutionItems) = preProject
 		CONTRIBUTING.md = CONTRIBUTING.md
 		ISSUE_TEMPLATE.md = ISSUE_TEMPLATE.md
 		PULL_REQUEST_TEMPLATE.md = PULL_REQUEST_TEMPLATE.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Travis CI", "Travis CI", "{4C16CC2F-FFA1-407B-B4EE-A357944ED858}"ProjectSection(SolutionItems) = preProject
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vagrant", "Vagrant", "{2E85D40C-01B1-4064-8CD0-1665B9D7FDF5}"
@@ -34,26 +35,35 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{A185
 		tools\vagrant\postgresql.sh = tools\vagrant\postgresql.sh
 	EndProjectSection
 EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Sslakka.Web", "src\Sslakka.Web\Sslakka.Web.csproj", "{9098BBEB-2010-497A-A3F0-228F81B09DCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sslakka.Web.Tests", "test\Sslakka.Web.Tests\Sslakka.Web.Tests.csproj", "{146EC623-6D4E-4C17-AA0B-309DF84F0318}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{90D10542-20A2-4413-B943-4A463569CD46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90D10542-20A2-4413-B943-4A463569CD46}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90D10542-20A2-4413-B943-4A463569CD46}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90D10542-20A2-4413-B943-4A463569CD46}.Release|Any CPU.Build.0 = Release|Any CPU
 		{146EC623-6D4E-4C17-AA0B-309DF84F0318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{146EC623-6D4E-4C17-AA0B-309DF84F0318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{146EC623-6D4E-4C17-AA0B-309DF84F0318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{146EC623-6D4E-4C17-AA0B-309DF84F0318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9098BBEB-2010-497A-A3F0-228F81B09DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9098BBEB-2010-497A-A3F0-228F81B09DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9098BBEB-2010-497A-A3F0-228F81B09DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9098BBEB-2010-497A-A3F0-228F81B09DCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C16CC2F-FFA1-407B-B4EE-A357944ED858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C16CC2F-FFA1-407B-B4EE-A357944ED858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C16CC2F-FFA1-407B-B4EE-A357944ED858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C16CC2F-FFA1-407B-B4EE-A357944ED858}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{90D10542-20A2-4413-B943-4A463569CD46} = {CFAAC090-7F58-48F5-A69F-442731F3B032}
 		{146EC623-6D4E-4C17-AA0B-309DF84F0318} = {22CC4521-5D20-4F22-AEE4-F0DDF30432A1}
 		{19964367-1516-481D-A7C2-E57372A48AD2} = {1FE70775-2CC4-4D94-AFF4-244308447029}
-		{2E85D40C-01B1-4064-8CD0-1665B9D7FDF5} = {9C480CE2-F8F5-4100-87A2-B16A0C9C9BA2}
 		{A185B5E3-9429-42FE-B136-BC8CBF57A874} = {2E85D40C-01B1-4064-8CD0-1665B9D7FDF5}
+		{9098BBEB-2010-497A-A3F0-228F81B09DCC} = {CFAAC090-7F58-48F5-A69F-442731F3B032}
+		{4C16CC2F-FFA1-407B-B4EE-A357944ED858} = {1FE70775-2CC4-4D94-AFF4-244308447029}
+		{2E85D40C-01B1-4064-8CD0-1665B9D7FDF5} = {1FE70775-2CC4-4D94-AFF4-244308447029}
 	EndGlobalSection
 EndGlobal

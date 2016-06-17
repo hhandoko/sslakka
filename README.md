@@ -1,3 +1,5 @@
+## sslakka = ServiceStack + Akka.NET [![Master Build Status](https://travis-ci.org/hhandoko/sslakka.svg?branch=master)](https://travis-ci.org/hhandoko/sslakka)
+
 `sslakka` is a team communication and collaboration tool inspired by [Slack], to demonstrate and validate [ServiceStack] and [Akka.NET] technology stack working in harmony.
 
 Feel free to open any Pull Request (PR) or issues if you see things that can be improved or fixed. Visit [sslakka HuBoard] for its development roadmap.
@@ -18,7 +20,7 @@ IDEs (Integrated Development Environment) are a matter of preference, however th
 
   - [Xamarin Studio Community] v6.0,
   - [MonoDevelop] v5.10, and
-  - [JetBrains Rider EAP] build 144.5171
+  - [JetBrains Rider EAP] build 146.1908
 
 *NOTE: JetBrains Rider is still in preview, thus for a number of tasks (e.g. bootstrapping) Xamarin Studio or MonoDevelop is more suitable. However, the above goes to show that the application can be developed on either IDEs on either OS.*
 
