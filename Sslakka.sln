@@ -20,8 +20,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub", "GitHub", "{199643
 		PULL_REQUEST_TEMPLATE.md = PULL_REQUEST_TEMPLATE.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Travis CI", "Travis CI", "{4C16CC2F-FFA1-407B-B4EE-A357944ED858}"ProjectSection(SolutionItems) = preProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Travis + Appveyor", "Travis + Appveyor", "{4C16CC2F-FFA1-407B-B4EE-A357944ED858}"
 	ProjectSection(SolutionItems) = preProject
+		.appveyor.yml = .appveyor.yml
 		.travis.yml = .travis.yml
 	EndProjectSection
 EndProject
@@ -35,9 +36,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{A185
 		tools\vagrant\postgresql.sh = tools\vagrant\postgresql.sh
 	EndProjectSection
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Sslakka.Web", "src\Sslakka.Web\Sslakka.Web.csproj", "{9098BBEB-2010-497A-A3F0-228F81B09DCC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sslakka.Web.Tests", "test\Sslakka.Web.Tests\Sslakka.Web.Tests.csproj", "{146EC623-6D4E-4C17-AA0B-309DF84F0318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sslakka.Web", "src\Sslakka.Web\Sslakka.Web.csproj", "{12B31ADD-8014-40C4-9BD8-4AA999778089}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,21 +50,21 @@ Global
 		{146EC623-6D4E-4C17-AA0B-309DF84F0318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{146EC623-6D4E-4C17-AA0B-309DF84F0318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{146EC623-6D4E-4C17-AA0B-309DF84F0318}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9098BBEB-2010-497A-A3F0-228F81B09DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9098BBEB-2010-497A-A3F0-228F81B09DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9098BBEB-2010-497A-A3F0-228F81B09DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9098BBEB-2010-497A-A3F0-228F81B09DCC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C16CC2F-FFA1-407B-B4EE-A357944ED858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4C16CC2F-FFA1-407B-B4EE-A357944ED858}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C16CC2F-FFA1-407B-B4EE-A357944ED858}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C16CC2F-FFA1-407B-B4EE-A357944ED858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B31ADD-8014-40C4-9BD8-4AA999778089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B31ADD-8014-40C4-9BD8-4AA999778089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B31ADD-8014-40C4-9BD8-4AA999778089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B31ADD-8014-40C4-9BD8-4AA999778089}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{146EC623-6D4E-4C17-AA0B-309DF84F0318} = {22CC4521-5D20-4F22-AEE4-F0DDF30432A1}
 		{19964367-1516-481D-A7C2-E57372A48AD2} = {1FE70775-2CC4-4D94-AFF4-244308447029}
 		{A185B5E3-9429-42FE-B136-BC8CBF57A874} = {2E85D40C-01B1-4064-8CD0-1665B9D7FDF5}
-		{9098BBEB-2010-497A-A3F0-228F81B09DCC} = {CFAAC090-7F58-48F5-A69F-442731F3B032}
 		{4C16CC2F-FFA1-407B-B4EE-A357944ED858} = {1FE70775-2CC4-4D94-AFF4-244308447029}
 		{2E85D40C-01B1-4064-8CD0-1665B9D7FDF5} = {1FE70775-2CC4-4D94-AFF4-244308447029}
+		{12B31ADD-8014-40C4-9BD8-4AA999778089} = {CFAAC090-7F58-48F5-A69F-442731F3B032}
 	EndGlobalSection
 EndGlobal
