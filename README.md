@@ -1,10 +1,14 @@
-## sslakka = ServiceStack + Akka.NET [![Master Build Status](https://travis-ci.org/hhandoko/sslakka.svg?branch=master)](https://travis-ci.org/hhandoko/sslakka) [![Master Build status](https://ci.appveyor.com/api/projects/status/fvkq9rugkdwvjhw8/branch/master?svg=true)](https://ci.appveyor.com/project/hhandoko/sslakka)
+[![License](https://img.shields.io/badge/license-Apache%202-brightgreen.svg)](LICENSE.txt) [![Master Build Status](https://travis-ci.org/hhandoko/sslakka.svg?branch=master)](https://travis-ci.org/hhandoko/sslakka) [![Master Build Status](https://ci.appveyor.com/api/projects/status/fvkq9rugkdwvjhw8/branch/master?svg=true)](https://ci.appveyor.com/project/hhandoko/sslakka)
 
-`sslakka` is a team communication and collaboration tool inspired by [Slack], to demonstrate and validate [ServiceStack] and [Akka.NET] technology stack working in harmony.
+![sslakka Console](media/sslakka-prompt.png)
+
+## sslakka = ServiceStack + Akka.NET
+
+`sslakka` is a team communication and collaboration tool inspired by [Slack], to demonstrate and validate [ServiceStack] and [Akka.NET] technology stack working in harmony. Visit [sslakka.herokuapp.com] to see it in action.
 
 Feel free to open any Pull Request (PR) or issues if you see things that can be improved or fixed. Visit [sslakka HuBoard] for its development roadmap.
 
-*NOTE: You will need an active [ServiceStack subscription] to run this application.*
+**NOTE:** _You will need an active [ServiceStack subscription] to develop and run this application._
 
 ## Prerequisites
 
@@ -22,7 +26,7 @@ IDEs (Integrated Development Environment) are a matter of preference, however th
   - [MonoDevelop] v5.10, and
   - [JetBrains Rider EAP] build 146.1908
 
-*NOTE: JetBrains Rider is still in preview, thus for a number of tasks (e.g. bootstrapping) Xamarin Studio or MonoDevelop is more suitable. However, the above goes to show that the application can be developed on either IDEs on either OS.*
+**NOTE:** _JetBrains Rider is still in preview, thus for a number of tasks (e.g. bootstrapping) Xamarin Studio or MonoDevelop is more suitable. However, the above goes to show that the application can be developed on either IDEs on either OS._
 
 ### Services Dependencies
 
@@ -39,7 +43,7 @@ Quick Vagrant command list (run it in the project root directory):
   * `vagrant halt` suspends the services VM
   * `vagrant destroy` deletes the services VM
 
-*NOTE: PostgreSQL will be available on `localhost:15432` or `192.168.100.10:5432`. PostgreSQL localhost port forwarding is setup at port `15432`` to avoid conflict with existing PostgreSQL installation.*
+**NOTE:** _PostgreSQL will be available on `localhost:15432` or `192.168.100.10:5432`. PostgreSQL localhost port forwarding is setup at port `15432`` to avoid conflict with existing PostgreSQL installation._
   
 The following Vagrant plugins are not mandatory, but help speed up box provisioning by caching common packages and update Guest Additions to the latest version automatically:
 
@@ -84,6 +88,7 @@ Many thanks to all you developers and open-source contributors who made this pro
 [ServiceStack]: https://servicestack.net
 [ServiceStack subscription]: https://servicestack.net/pricing
 [Slack]: https://slack.com
+[sslakka.herokuapp.com]: http://sslakka.herokuapp.com
 [sslakka HuBoard]: https://huboard.com/hhandoko/sslakka/
 [Vagrant]: https://www.vagrantup.com
 [vagrant-cachier]: https://github.com/fgrehm/vagrant-cachier
