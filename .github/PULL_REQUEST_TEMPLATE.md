@@ -1,6 +1,11 @@
 ## Summary
 
-Fixes #*<GitHub issue number>*
+<!-- NOTE: Remove as necessary -->
+Completes feature #*<GitHub issue number>* 
+Completes chore #*<GitHub issue number>*
+Fixes issue #*<GitHub issue number>*
+
+Related tickets: #*<GitHub issue number>*
 
 *<Write a short summary of your changes.>*
 

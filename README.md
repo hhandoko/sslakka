@@ -42,13 +42,12 @@ Quick Vagrant command list (run it in the project root directory):
   * `vagrant global-status` show all Vagrant VM on the machine
   * `vagrant halt` suspends the services VM
   * `vagrant destroy` deletes the services VM
-
-**NOTE:** _PostgreSQL will be available on `localhost:15432` or `192.168.100.10:5432`. PostgreSQL localhost port forwarding is setup at port `15432`` to avoid conflict with existing PostgreSQL installation._
   
-The following Vagrant plugins are not mandatory, but help speed up box provisioning by caching common packages and update Guest Additions to the latest version automatically:
+The following Vagrant plugin is not mandatory, but help speed up box provisioning by caching common packages on subsequent provisioning:
 
   * [vagrant-cachier]
-  * [vagrant-vbguest]
+
+**NOTE:** _PostgreSQL will be available on `localhost:15432` or `192.168.100.10:5432`. PostgreSQL localhost port forwarding is setup at port `15432` to avoid conflict with existing PostgreSQL installation._
 
 ## Contributing
 
@@ -92,5 +91,4 @@ Many thanks to all you developers and open-source contributors who made this pro
 [sslakka HuBoard]: https://huboard.com/hhandoko/sslakka/
 [Vagrant]: https://www.vagrantup.com
 [vagrant-cachier]: https://github.com/fgrehm/vagrant-cachier
-[vagrant-vbguest]: https://github.com/dotless-de/vagrant-vbguest
 [Xamarin Studio Community]: https://www.xamarin.com/studio

@@ -16,8 +16,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub", "GitHub", "{19964367-1516-481D-A7C2-E57372A48AD2}"
 	ProjectSection(SolutionItems) = preProject
 		CONTRIBUTING.md = CONTRIBUTING.md
-		ISSUE_TEMPLATE.md = ISSUE_TEMPLATE.md
-		PULL_REQUEST_TEMPLATE.md = PULL_REQUEST_TEMPLATE.md
+		.github/ISSUE_TEMPLATE.md = .github/ISSUE_TEMPLATE.md
+		.github/PULL_REQUEST_TEMPLATE.md = .github/PULL_REQUEST_TEMPLATE.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Travis + Appveyor", "Travis + Appveyor", "{4C16CC2F-FFA1-407B-B4EE-A357944ED858}"
