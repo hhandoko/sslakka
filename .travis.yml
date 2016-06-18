@@ -24,8 +24,3 @@ install:
 script:
   - xbuild /p:Configuration=Release Sslakka.sln
   - mono ./testrunner/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./test/Sslakka.Web.Tests/bin/Release/Sslakka.Web.Tests.dll
-deploy:
-  provider: heroku
-  app: sslakka
-  api_key:
-    secure: vPzv3I9Ae738OBd/yLwULDRv/7pS/xT62gd3pilYb1WZBy3zMESygSpB2z+83qIFEui071IueRvQI+HABoSe/bL7jCMdycyDdG2qQuzW5YgiNP3inixVNCzIWrDpBCJMqhZa4e+4Mfmjl7Aqb6VcrwUHKvWQnuNaTXWiB099JKxv1WqpOczmCW9AAgn+B/BhbemMO7zMFXn+tuOfu8k9jANjXxWsjDqP6aSgtXUPYs8VQGsfkPFFTigTs1NMcgv6brpOp1Bg950+UjS5nSj2jvyw/2xUsC5rBL6dkU9LZeMXEgjg1PAQ8UVV1im9DqHoDs2WH1IS22PpwUO2d3/ag1MSal9hbqcqoN0opzjft4+jxetRNDCo2VHsPcqAiPBOI4G5khNKOQzimt1nSKN3VJm7OcBODmu8ZsRMx3xurWqFIhjNHUd/naH7i1Gl62V0hL9FRSHjSfFijrGxBYfcDybvmuHp2yS/93Mq81v/3jicqnDBPmuT69pKSOwAle9U/AtQoz2//e6K+6QtmGgvhmYWiCJXXLkNyy92uN3BlIy9AbxJRUl3Ez35rblaQKlNOwVP9MNwAR6sEHjqACW5GVgDyQOjJ/2+OruZXxbXgWD9H06HL8igLKCqY4C32fPPZ5oHYEpF9zrjPE8CPO/+G8odgMxRFXCz3VWyDvFAo/0=
