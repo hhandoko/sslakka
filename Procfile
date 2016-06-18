@@ -1,1 +1,1 @@
-web: mono ./src/Sslakka.Web/bin/Release/Sslakka.Web.exe
+web: mono Sslakka.Web.exe
