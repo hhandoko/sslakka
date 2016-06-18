@@ -1,4 +1,4 @@
-﻿###
+###
 #  File     : .travis.yml
 #  License  :
 #    Copyright (c) 2016 sslakka contributors
@@ -24,3 +24,7 @@ install:
 script:
   - xbuild /p:Configuration=Release Sslakka.sln
   - mono ./testrunner/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./test/Sslakka.Web.Tests/bin/Release/Sslakka.Web.Tests.dll
+deploy:
+  provider: heroku
+  api_key:
+    secure: b2tSZHmvrGpGJYUNIe7ueaM9RMlIfdKuBlOzLIUavquOnxHlXNtEIPRnuG5UCDax6Y3ZBdTej+FRfAeeFwuQQa4faK78ogumm1H+QQo4TMlmpIQvev43hECB7UvXqfr4yqwmoCwGHp2rl+vNLUHoVRmIWjto53w78bQCdqqJyL2mgyRKY+7O8X7j7LINbQRS2i39TDwPjZpznCYpsU0yuPZrFWydVIYFkFsxm6UrcXN5fp4F45hzAbBtpjrrVPGUIp0Xt35KcRMfYNFHGdU6OBnOQ20ymBXEMAtWvZ9YI/m1urFKmd9eq8j+c59VNl0DMGbJuvWehQ2L+GdGPvBZ7OV1pDn1c8waPgY0LcGlFQ8xCM0H9kKITbTyEvgIbYdx7D9DaG3thDIGqDhmboP9sk9rKgcE+dbunSJVoTW+es1+syiIYkg6hMBMnoIfkH8zZSmuzaJLPKkENua0B8nIlbc19S0MIt1JOct6GqkztGf7zewXzLz/ho6AGVrdiq231G5FNqLc/r++dwa9kVrkJCb1IH7YzkPs7OJAheZCJ7v5TpGZp513z3UqpeHo38SGfDppMX6dzMGwRY/fHKp8gMoTta4thEcRr8HHhgFYJxqyJ3PlstrW3qka84JMMyKieR5jG39KY0B9FepAnBx/FIe4BdkM2M7oIvPZdM8YOPo=
