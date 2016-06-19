@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="Test.cs">
+// <copyright file="AppHost.cs">
 //   Copyright (c) 2016 sslakka contributors
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,23 +16,26 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Sslakka.Web.Tests
+namespace Sslakka
 {
-    using NUnit.Framework;
-
-    using Sslakka.Web.Tests.Fixtures;
+    using Funq;
+    using ServiceStack;
 
     /// <summary>
-    /// Placeholder test until the application implement services.
+    /// Web application host.
     /// </summary>
-    [TestFixture]
-    public class Test : IntegrationTestFixture
+    public class AppHost : AppSelfHostBase
     {
-        [Test]
-        public void TestCase()
-        {
-            Assert.IsTrue(true);
-        }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:Sslakka.Web.AppHost"/> class.
+        /// </summary>
+        public AppHost() : base("sslakka", typeof(AppHost).Assembly) { }
+
+        /// <summary>
+        /// Configure the specified container.
+        /// </summary>
+        /// <param name="container">Container.</param>
+        public override void Configure(Container container) { }
     }
 }
 

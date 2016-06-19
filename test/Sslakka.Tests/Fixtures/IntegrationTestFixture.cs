@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="AppHost.cs">
+// <copyright file="IntegrationTestFixture.cs">
 //   Copyright (c) 2016 sslakka contributors
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,26 +16,46 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Sslakka.Web
+namespace Sslakka.Tests.Fixtures
 {
-    using Funq;
+    using NUnit.Framework;
     using ServiceStack;
 
     /// <summary>
-    /// Web application host.
+    /// Integration test fixture base class.
     /// </summary>
-    public class AppHost : AppSelfHostBase
+    public class IntegrationTestFixture
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="T:Sslakka.Web.AppHost"/> class.
-        /// </summary>
-        public AppHost() : base("sslakka", typeof(AppHost).Assembly) { }
+        // Test application base URI
+        const string BaseUri = "http://localhost:8081/";
+
+        // Test application host instance
+        ServiceStackHost appHost;
 
         /// <summary>
-        /// Configure the specified container.
+        /// Tests fixture set up.
         /// </summary>
-        /// <param name="container">Container.</param>
-        public override void Configure(Container container) { }
+        /// <returns>The fixture set up.</returns>
+        [OneTimeSetUp]
+        public void TestFixtureSetUp()
+        {
+            // Start your AppHost on Test Fixture setup
+            appHost =
+                new AppHost()
+                    .Init()
+                    .Start(BaseUri);
+        }
+
+        /// <summary>
+        /// Tests fixture tear down.
+        /// </summary>
+        /// <returns>The fixture tear down.</returns>
+        [OneTimeTearDown]
+        public void TestFixtureTearDown()
+        {
+            // Dispose it on tear down
+            appHost.Dispose();
+        }
+
     }
 }
-

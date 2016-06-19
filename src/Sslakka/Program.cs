@@ -16,9 +16,10 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Sslakka.Web
+namespace Sslakka
 {
     using System;
+    using System.Threading;
 
     using ServiceStack.Text;
 
@@ -45,7 +46,7 @@ namespace Sslakka.Web
             PrintPrompt(listeningOn);
 
             // Run web server indefinitely (until terminated)
-            System.Threading.Thread.Sleep(System.Threading.Timeout.Infinite);
+            Thread.Sleep(Timeout.Infinite);
         }
 
         /// <summary>
@@ -71,15 +72,15 @@ namespace Sslakka.Web
             $"          Listening on - {listeningOn}                   ".Print();
             $"                                                         ".Print();
             $"                                                         ".Print();
-            $" ┌─────────────────────────────────────────────────┐      ".Print();
-            $" │ Visit the following GitHub repository for docs, │      ".Print();
-            $" │   roadmap, source code, and much, much more:    │      ".Print();
-            $" │                                                 │      ".Print();
-            $" │       https://github.com/hhandoko/sslakka       │      ".Print();
-            $" └─────────────────────────────────────────────────┘      ".Print();
+            $" ┌─────────────────────────────────────────────────┐     ".Print();
+            $" │ Visit the following GitHub repository for docs, │     ".Print();
+            $" │   roadmap, source code, and much, much more:    │     ".Print();
+            $" │                                                 │     ".Print();
+            $" │       https://github.com/hhandoko/sslakka       │     ".Print();
+            $" └─────────────────────────────────────────────────┘     ".Print();
             $"                                                         ".Print();
             $"                                                         ".Print();
-            $"  Made with ❤ in Singapore. Type [Ctrl+C] to quit.        ".Print();
+            $"  Made with ❤ in Singapore. Type [Ctrl+C] to quit.       ".Print();
             $"                                                         ".Print();
         }
     }
