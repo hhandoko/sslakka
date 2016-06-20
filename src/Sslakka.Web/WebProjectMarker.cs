@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="AppHost.cs">
+// <copyright file="WebProjectMarker.cs">
 //   Copyright (c) 2016 sslakka contributors
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,35 +16,11 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Sslakka
+namespace Sslakka.Web
 {
-    using Funq;
-    using ServiceStack;
-    using ServiceStack.Razor;
-
-    using Sslakka.Web;
-
     /// <summary>
-    /// Web application host.
+    /// Web project assembly marker.
     /// </summary>
-    public class AppHost : AppSelfHostBase
-    {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="T:Sslakka.Web.AppHost"/> class.
-        /// </summary>
-        public AppHost() : base("sslakka", typeof(AppHost).Assembly) { }
-
-        /// <summary>
-        /// Configure the specified container.
-        /// </summary>
-        /// <param name="container">Container.</param>
-        public override void Configure(Container container)
-        {
-            Plugins.Add(new RazorFormat
-            {
-                LoadFromAssemblies = { typeof(WebProjectMarker).Assembly }
-            });
-        }
-    }
+    public class WebProjectMarker { }
 }
 

@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="AppHost.cs">
+// <copyright file="HomepageTest.cs">
 //   Copyright (c) 2016 sslakka contributors
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,35 +16,36 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Sslakka
+namespace Sslakka.Web.Tests
 {
-    using Funq;
-    using ServiceStack;
-    using ServiceStack.Razor;
-
-    using Sslakka.Web;
+    using NUnit.Framework;
 
     /// <summary>
-    /// Web application host.
+    /// Homepage acceptance test.
     /// </summary>
-    public class AppHost : AppSelfHostBase
+    [TestFixture("firefox", "46", "OSX")]
+    public class HomepageTest : AcceptanceTestFixture
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="T:Sslakka.Web.AppHost"/> class.
+        /// Initializes a new instance of the <see cref="T:Sslakka.Web.Tests.HomepageTest"/> class.
         /// </summary>
-        public AppHost() : base("sslakka", typeof(AppHost).Assembly) { }
+        /// <param name="browser">Browser type.</param>
+        /// <param name="version">Browser version.</param>
+        /// <param name="os">Operating System type.</param>
+        /// <param name="deviceName">Device name.</param>
+        /// <param name="deviceOrientation">Device orientation.</param>
+        public HomepageTest(string browser, string version, string os)
+            : base(browser, version, os) { }
 
         /// <summary>
-        /// Configure the specified container.
+        /// Visitors the can view the homepage.
         /// </summary>
-        /// <param name="container">Container.</param>
-        public override void Configure(Container container)
+        [Test]
+        public void visitor_can_view_homepage()
         {
-            Plugins.Add(new RazorFormat
-            {
-                LoadFromAssemblies = { typeof(WebProjectMarker).Assembly }
-            });
+            GoTo(Homepage);
+
+            StringAssert.Contains("sslakka", Homepage.Title());
         }
     }
 }
-
