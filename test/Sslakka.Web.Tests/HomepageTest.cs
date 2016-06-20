@@ -23,7 +23,7 @@ namespace Sslakka.Web.Tests
     /// <summary>
     /// Homepage acceptance test.
     /// </summary>
-    [TestFixture("firefox", "46", "OSX")]
+    [TestFixture("firefox", "46", "OSX"), Category("Selenium")]
     public class HomepageTest : AcceptanceTestFixture
     {
         /// <summary>
@@ -32,8 +32,6 @@ namespace Sslakka.Web.Tests
         /// <param name="browser">Browser type.</param>
         /// <param name="version">Browser version.</param>
         /// <param name="os">Operating System type.</param>
-        /// <param name="deviceName">Device name.</param>
-        /// <param name="deviceOrientation">Device orientation.</param>
         public HomepageTest(string browser, string version, string os)
             : base(browser, version, os) { }
 
