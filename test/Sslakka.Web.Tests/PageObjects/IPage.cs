@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="Test.cs">
+// <copyright file="IPage.cs">
 //   Copyright (c) 2016 sslakka contributors
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,23 +16,18 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Sslakka.Web.Tests
+namespace Sslakka.Web.Tests.PageObjects
 {
-    using NUnit.Framework;
-
-    using Sslakka.Web.Tests.Fixtures;
-
     /// <summary>
-    /// Placeholder test until the application implement services.
+    /// Page object interface.
     /// </summary>
-    [TestFixture]
-    public class Test : IntegrationTestFixture
+    public interface IPage
     {
-        [Test]
-        public void TestCase()
-        {
-            Assert.IsTrue(true);
-        }
+        /// <summary>
+        /// Gets or sets the page URL.
+        /// </summary>
+        /// <value>The page URL.</value>
+        string Url { get; set; }
     }
 }
 

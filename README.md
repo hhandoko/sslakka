@@ -24,7 +24,7 @@ IDEs (Integrated Development Environment) are a matter of preference, however th
 
   - [Xamarin Studio Community] v6.0,
   - [MonoDevelop] v5.10, and
-  - [JetBrains Rider EAP] build 146.1908
+  - [JetBrains Rider EAP] build 146.2572
 
 **NOTE:** _JetBrains Rider is still in preview, thus for a number of tasks (e.g. bootstrapping) Xamarin Studio or MonoDevelop is more suitable. However, the above goes to show that the application can be developed on either IDEs on either OS._
 

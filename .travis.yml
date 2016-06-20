@@ -23,4 +23,4 @@ install:
   - nuget install NUnit.ConsoleRunner -Version 3.2.1 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release Sslakka.sln
-  - mono ./testrunner/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./test/Sslakka.Web.Tests/bin/Release/Sslakka.Web.Tests.dll
+  - mono ./testrunner/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./test/Sslakka.Tests/bin/Release/Sslakka.Tests.dll

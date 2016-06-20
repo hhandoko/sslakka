@@ -1,1 +1,1 @@
-web: mono Sslakka.Web.exe http://*:$PORT/
+web: mono Sslakka.exe http://*:$PORT/

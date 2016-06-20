@@ -4,11 +4,11 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes. 
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle("Sslakka.Web")]
-[assembly: AssemblyDescription("sslakka front-end project")]
+[assembly: AssemblyTitle("Sslakka.Web.Tests")]
+[assembly: AssemblyDescription("sslakka web acceptance tests")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("sslakka contributors")]
-[assembly: AssemblyProduct("Sslakka.Web")]
+[assembly: AssemblyProduct("sslakka")]
 [assembly: AssemblyCopyright("Copyright (c) 2016 sslakka contributors")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

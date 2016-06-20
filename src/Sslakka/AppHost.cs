@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="IntegrationTestFixture.cs">
+// <copyright file="AppHost.cs">
 //   Copyright (c) 2016 sslakka contributors
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,46 +16,35 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace Sslakka.Web.Tests.Fixtures
+namespace Sslakka
 {
-    using NUnit.Framework;
+    using Funq;
     using ServiceStack;
+    using ServiceStack.Razor;
+
+    using Sslakka.Web;
 
     /// <summary>
-    /// Integration test fixture base class.
+    /// Web application host.
     /// </summary>
-    public class IntegrationTestFixture
+    public class AppHost : AppSelfHostBase
     {
-        // Test application base URI
-        const string BaseUri = "http://localhost:8081/";
-
-        // Test application host instance
-        ServiceStackHost appHost;
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:Sslakka.Web.AppHost"/> class.
+        /// </summary>
+        public AppHost() : base("sslakka", typeof(AppHost).Assembly) { }
 
         /// <summary>
-        /// Tests fixture set up.
+        /// Configure the specified container.
         /// </summary>
-        /// <returns>The fixture set up.</returns>
-        [OneTimeSetUp]
-        public void TestFixtureSetUp()
+        /// <param name="container">Container.</param>
+        public override void Configure(Container container)
         {
-            // Start your AppHost on Test Fixture setup
-            appHost =
-                new AppHost()
-                    .Init()
-                    .Start(BaseUri);
+            Plugins.Add(new RazorFormat
+            {
+                LoadFromAssemblies = { typeof(WebProjectMarker).Assembly }
+            });
         }
-
-        /// <summary>
-        /// Tests fixture tear down.
-        /// </summary>
-        /// <returns>The fixture tear down.</returns>
-        [OneTimeTearDown]
-        public void TestFixtureTearDown()
-        {
-            // Dispose it on tear down
-            appHost.Dispose();
-        }
-
     }
 }
+

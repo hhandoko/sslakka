@@ -684,3 +684,7 @@ fabric.properties
 
 ### Vagrant ###
 .vagrant/
+
+
+### Sslakka-specific ###
+.idea.Sslakka
